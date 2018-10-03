@@ -5,7 +5,7 @@ variable "cluster_name" {}
 
 module "nomad" {
   source  = "app.terraform.io/Darnold-Pipeline/nomad/aws"
-  version = "1.0.0"
+  version = "2.0.0"
 
   consul_public = "true"
   consul_servers = 3
