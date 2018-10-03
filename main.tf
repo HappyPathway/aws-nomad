@@ -1,5 +1,8 @@
 //--------------------------------------------------------------------
 // Modules
+variable "organization" {}
+variable "cluster_name" {}
+
 module "nomad" {
   source  = "app.terraform.io/Darnold-Pipeline/nomad/aws"
   version = "1.0.0"
