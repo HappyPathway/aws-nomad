@@ -19,7 +19,9 @@ module "nomad" {
   nomad_image_id = "${var.hashistack_ami}"
   nomad_public = "true"
   nomad_servers = 3
+  nomad_clients = 3
   organization_name = "${var.organization}"
+  common_name = "${var.common_name}"
   vault_provision = "true"
   vault_public = "true"
   vault_servers = 3
