@@ -25,3 +25,7 @@ module "nomad" {
   vault_servers = 3
   vault_image_id = "${var.hashistack_ami}"
 }
+
+output "zREADME" {
+  value = "${module.nomad.zREADME}"
+}
