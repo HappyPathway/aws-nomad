@@ -36,3 +36,7 @@ resource "random_id" "random" {
 output "zREADME" {
   value = "${module.nomad.zREADME}"
 }
+  
+output "private_key_pem" {
+  value = "${module.nomad.private_key_pem}"
+}
