@@ -26,6 +26,13 @@ module "nomad" {
   vault_image_id = "${var.hashistack_ami}"
 }
 
+resource "random_id" "random" {
+  keepers {
+    uuid = "${uuid()}"
+  }
+  byte_length = 32
+}
+  
 output "zREADME" {
   value = "${module.nomad.zREADME}"
 }
